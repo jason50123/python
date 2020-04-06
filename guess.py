@@ -1,0 +1,2 @@
+while True
+    answer= input('')
