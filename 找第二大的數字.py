@@ -1,4 +1,5 @@
 n = input()
-x = sorted(n)
-num = x.split(",")
-print(num)
+x= n.split(",")
+x = sorted(x)
+del x[2]
+print (max(x))
