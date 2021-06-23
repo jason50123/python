@@ -1,0 +1,16 @@
+KBar['BU'] = KBar['MA']+0.75*KBar['STD']
+#for迴圈內
+BU = KBar['BU'][i]
+LastBU = KBar['BU'][i-1]
+# 高點賣出
+    elif OrderQty != 0 and LastClose > LastBU and Close <= BU:
+        # 出場時間、價格
+        CoverDate = KBar['date'][i+1]
+        CoverPrice = KBar['Open'][i+1]
+        # 績效紀錄
+        Profit = (CoverPrice-OrderPrice)*OrderQty*1000
+        TotalProfit += [Profit]
+        TotalTreadeNum += 1
+        OrderQty = 0
+        print('高點 售出時間:', CoverDate.strftime('%Y/%m/%d'),
+              '售出價格:', CoverPrice, '獲利:', Profit)

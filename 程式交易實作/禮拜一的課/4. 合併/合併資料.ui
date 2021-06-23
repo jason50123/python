@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>280</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>顯示資料</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>731</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>2020/03/01</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2020/03/02</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>品項</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>數量</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>倉庫</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>香蕉</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>西瓜</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>5</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>B</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>290</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>顯示資料</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>280</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>421</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>起始圖.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
