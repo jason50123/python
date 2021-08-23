@@ -35,3 +35,5 @@ def stock(stock_id):
                 volume = True,
                 savefig='bar_chart.png', # 儲存檔案
             )
+if __name__ == "__main__":
+    stock("2330")
